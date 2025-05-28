@@ -12,7 +12,7 @@ app.get("/", Home);
 // Home function
 function Home(req, res) {
   // clearing redundant data
-  Questions.allData = [];
+  Questions.allQuestions = [];
   questions.map((questionItem) => {
     new Questions(
       questionItem.question,
